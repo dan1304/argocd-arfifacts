@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://github.com/lateshow30/argocd-arfifacts.git
     targetRevision: HEAD
-    path: dev
+    path: qa
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: myapp-staging
 
   syncPolicy:
     syncOptions:
